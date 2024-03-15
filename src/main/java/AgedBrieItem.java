@@ -13,4 +13,8 @@ public class AgedBrieItem extends GlidedRoseItem {
             }
         }
     }
+
+    public void updateSellIn() {
+        item.sellIn = item.sellIn - 1;
+    }
 }

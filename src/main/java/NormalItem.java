@@ -14,4 +14,7 @@ public class NormalItem extends GlidedRoseItem {
             }
         }
     }
+
+    public void updateSellIn() {
+    }
 }

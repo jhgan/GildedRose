@@ -24,4 +24,8 @@ public class BackstagePassesItem extends GlidedRoseItem {
             item.quality = 0;
         }
     }
+
+    public void updateSellIn() {
+        item.sellIn = item.sellIn - 1;
+    }
 }

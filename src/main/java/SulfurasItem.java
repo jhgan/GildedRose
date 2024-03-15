@@ -5,4 +5,7 @@ public class SulfurasItem extends GlidedRoseItem {
 
     public void updateQuality() {
     }
+
+    public void updateSellIn() {
+    }
 }

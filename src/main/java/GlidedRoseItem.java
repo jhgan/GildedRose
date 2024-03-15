@@ -6,4 +6,6 @@ public abstract class GlidedRoseItem {
     }
 
     public abstract void updateQuality();
+
+    public abstract void updateSellIn();
 }

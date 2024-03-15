@@ -10,14 +10,10 @@ class GildedRose {
 
     public void updateQuality() {
         for (Item item : items) {
-            updateQuality(item);
-            updateSellIn(item);
+            GlidedRoseItem glidedRoseItem = getGlidedRoseItem(item);
+            glidedRoseItem.updateQuality();
+            glidedRoseItem.updateSellIn();
         }
-    }
-
-    private static void updateQuality(Item item) {
-        GlidedRoseItem glidedRoseItem = getGlidedRoseItem(item);
-        glidedRoseItem.updateQuality();
     }
 
     private static GlidedRoseItem getGlidedRoseItem(Item item) {
@@ -32,12 +28,5 @@ class GildedRose {
             glidedRoseItem = new NormalItem(item);
         }
         return glidedRoseItem;
-    }
-
-    private static void updateSellIn(Item item) {
-        if (item.name.equals(SULFURAS)) {
-        } else {
-            item.sellIn = item.sellIn - 1;
-        }
     }
 }
